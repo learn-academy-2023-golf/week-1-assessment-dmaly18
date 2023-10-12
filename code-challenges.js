@@ -35,23 +35,32 @@ if(fruit1.length > fruit2.length){
     console.log(fruit2)
 }
 
-// Pseudo code:
-
 
 
 // --------------------1) Create the code that will combine the two arrays and return the length using the test variables provided below.
 
+// Pseudo code:
+// Create a code that will combine the two arrays
+// Input: padres1984WorldSeriesRuns & padres1998WorldSeriesRuns
+// Output: 9
+// Merge the two arrays using .concat, and use .length to get the return of the length of the combined arrays  
+
 const padres1984WorldSeriesRuns = [2, 5, 2, 2, 4]
 const padres1998WorldSeriesRuns = [6, 3, 5, 3]
 
-//Merged the two arrays using concat 
 console.log(padres1984WorldSeriesRuns.concat(padres1998WorldSeriesRuns).length)
 
 // Expected output: 9
 
-// Pseudo code:
+
 
 // --------------------2) Create the code that will reverse the letters of a string using the test variable provided below.
+
+// Pseudo code:
+// Create a code that will reverse a string
+// Input: currentCohort
+// Output: 3202 NRAEL
+// Declare variable myReversedString, use .split to turn the string into an array, .reverse to reverse the array, and .join to turn the array back into a string 
 
 const currentCohort = "LEARN 2023"
 // Expected output: "3202 NRAEL"
@@ -59,12 +68,22 @@ const currentCohort = "LEARN 2023"
 const myReversedString = currentCohort.split("").reverse().join("")
 console.log(myReversedString)
 
-// Pseudo code:
 
 // --------------------3) Create the code that will log only the odd numbers from the array using the test variable provided below.
 
+// Pseudo code:
+// create a function that returns only the odd numbers
+// Input: stockExhcange
+// Output: [13, 34, -4, 42, 5, -5, 10, 27, 42, 10]
+// parameter: newArray
+// .fiter for iteration
+// modulo to determine if the number is odd 
+
 const stockExchange = [13, 34, -4, 42, 5, -5, 10, 27, 42, 10]
-console.log('')
+const onlyOddNumbers = (newArray) => {
+    return newArray.filter(value => value % 2 !== 0)
+}
+console.log(onlyOddNumbers(stockExchange))
 // Expected output: 13 5 -5 27
 
-// Pseudo code:
+
